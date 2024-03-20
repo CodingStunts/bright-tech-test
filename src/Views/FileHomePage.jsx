@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 
 import { getFiles } from "../api/fetchData";
-import FileFolder from "../components/FileFolder";
+
+import File from "../components/File";
+import Folder from "../components/Folder";
+
 
 export const FileHomePage = () => {
   const [currentFiles, setCurrentFiles] = useState(null);
@@ -30,7 +33,9 @@ export const FileHomePage = () => {
       <div style={{ display: "flex", flexDirection: "column" }}>
         {currentFiles &&
           currentFiles.map((file) => {
-            return <FileFolder props={file} />;
+            if (file.type === "folder"){
+            return <Folder props={file} />}
+            else return <File props={file} />
           })}
       </div>
     </>
