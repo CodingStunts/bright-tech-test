@@ -2,7 +2,7 @@
 
 I've worked through this over a couple of hours and wanted to complete it (at least functionally, I'm not saying it's pretty) before handing it in so I went over the time limit.
 
-I decided to stick with pure functionality and not do any real styling on it. I had this vision of simply recreating a standard iOS Finder pane, so kept it basic with file and folder icons and and kept it black and white for the text. 
+I decided to stick with pure functionality and not do any real styling on it. I had this vision of simply recreating a standard iOS Finder pane, so kept it basic with file and folder icons and and kept it black and white for the text. Also, given a little more time to faff around with the types and interfaces I would have liked to have completed it in TypeScript rather than vanilla JS.
 
 I changed up the original example json object to include file sizes and also to nest further folders inside the existing folders to make the implementation a little more challenging and fun to work on.
 
