@@ -4,7 +4,8 @@ export const File = ({ props }) => {
   const { name } = props;
 
   return (
-        <div style={{display: "flex", flexDirection: "column", alignItems: "center"}} key={name} >
+        <div style={{display: "flex", flexDirection: "column", alignItems: "center"}} key={name} data-testid="folderfile"
+        >
         <img
           style={{ width: "50px" }}
           src={fileImg}

@@ -22,14 +22,17 @@ export const Folder = ({ props }) => {
         }}
         key={name}
         onClick={openFolder}
-      >
+        data-testid="folderfile"    
+        >
         <img style={{ width: "50px" }} src={folderImg} alt={"folder"} />
         <p>{name}</p>
       </div>
       {folderOpen && (
         <div style={{ marginLeft: "100px", padding: "20px" }}>
           {files.map((file) => {
-            return <File props={file} />;
+            if (file.type === "folder"){
+                return <Folder props={file}/>
+            } else return <File props={file} />;
           })}
         </div>
       )}
